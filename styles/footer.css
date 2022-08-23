@@ -1,6 +1,6 @@
 footer {
-    margin: 1em;
     background-color: var(--cor-branca);
+    padding: 1em;
 }
 .footer-titulo {
     color: var(--azul);
