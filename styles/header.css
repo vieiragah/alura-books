@@ -48,4 +48,44 @@ header {
     -webkit-text-fill-color: transparent;
     text-transform: uppercase;
 }
+.-titulo {
+    display: none;
+}
+.-lista-menu {
+    display: none;
+}
 
+@media screen and (min-width: 1024px) {
+    .-titulo {
+        font-family: var(--font-secundaria);
+        font-size: 30px;
+        display: block;
+    }
+    .-titulo-negrito {
+        font-weight: 700;
+    }
+    .menu-hamburger{
+        display: none;
+    }
+    .-lista-menu {
+        display: flex;
+        gap: 0 1em;
+    }
+    .-lista-item {
+        text-transform: uppercase;
+    }
+    .-lista-link {
+        text-decoration: none;
+        color: var(--preto);
+    }
+    .-img-cabecalho {
+        display: none;
+    }
+    .-menu-botao:checked ~ .lista-menu {
+        display: block;
+        width: auto;
+    }
+    .-menu-botao {
+        display: none;
+    }
+}

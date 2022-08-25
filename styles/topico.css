@@ -24,3 +24,8 @@
     color: var(--cor-branca);
     font-weight: 700;
 }
+@media screen and (min-width: 1024px) {
+    .topico-titulo, .topico-link {
+        font-size: 24px;
+    }
+}
