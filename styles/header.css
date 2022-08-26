@@ -6,6 +6,13 @@
     background-repeat: no-repeat;
     background-position: center;
 }
+.container-botao:checked ~ .menu-rotulo > .img-cabecalho {
+    background-image: url(../img/menu_aberto.png);
+}
+.container-botao:checked ~ .menu-rotulo {
+    background: var(--azul-degrade);
+}
+
 header {
     background-color: var(--cor-branca);
     display: flex;
@@ -58,7 +65,23 @@ header {
     display: none;
 }
 
+
 @media screen and (min-width: 1024px) {
+    .-menu-botao:checked ~ .categorias > .-lista-item {
+        background: var(--azul-degrade);
+        color: var(--cor-branca);
+    }
+    .-lista-item {
+        padding: 2em 1em;
+    }
+    .lista-item:hover {
+        background: var(--azul-degrade);
+    }
+    .lista-item:hover > .lista-menu-link {
+        -webkit-text-fill-color: var(--cor-branca);
+        text-decoration: none;
+    }
+
     .-titulo {
         font-family: var(--font-secundaria);
         font-size: 30px;
