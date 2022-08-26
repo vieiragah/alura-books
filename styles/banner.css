@@ -33,10 +33,19 @@
         font-size: 36px;
     }
     .botao-pesquisa {
-        width: 50%;
+        width: 45%;
     }
     .botao-pesquisa::placeholder {
         font-size: 16px;
-        background-position: 4em;
+        background-position: 2.5em;
     }
+}
+@media screen and (min-width: 1728px) {
+    .botao-pesquisa{
+        width: 35vw;
+    }
+    .botao-pesquisa::placeholder {
+        background-position: 8em;
+    }
+    
 }

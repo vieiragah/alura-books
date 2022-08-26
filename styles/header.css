@@ -54,6 +54,9 @@ header {
 .-lista-menu {
     display: none;
 }
+.-texto-header {
+    display: none;
+}
 
 @media screen and (min-width: 1024px) {
     .-titulo {
@@ -87,5 +90,29 @@ header {
     }
     .-menu-botao {
         display: none;
+    }
+    .container-header {
+        display: flex;
+    }
+}
+@media screen and (min-width: 1728px) {
+    .-header-icones {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: var(--preto);
+        font-size: 20px;
+    }
+    .-lista-menu {
+        margin-right: auto;
+    }
+    .-titulo {
+        margin: 0em 1.5em 0 0;
+    }
+    header {
+        padding: 0 2em;
+    }
+    .-texto-header {
+        display: block;
     }
 }
